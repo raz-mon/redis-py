@@ -544,9 +544,7 @@ Distinct
             Operation("Join")
             .append_child(
                 Operation("Project").append_child(
-                    Operation(
-                        "Conditional Traverse", "(t:Team)->(r:Rider)"
-                    ).append_child(
+                    Operation("Conditional Traverse", "(t:Team)->(r:Rider)").append_child(
                         Operation("Filter").append_child(
                             Operation("Node By Label Scan", "(t:Team)")
                         )
@@ -555,9 +553,7 @@ Distinct
             )
             .append_child(
                 Operation("Project").append_child(
-                    Operation(
-                        "Conditional Traverse", "(t:Team)->(r:Rider)"
-                    ).append_child(
+                    Operation("Conditional Traverse", "(t:Team)->(r:Rider)").append_child(
                         Operation("Filter").append_child(
                             Operation("Node By Label Scan", "(t:Team)")
                         )
